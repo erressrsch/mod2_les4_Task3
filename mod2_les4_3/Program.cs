@@ -4,23 +4,13 @@
     {
         static void Main(string[] args)
         {
-            static double diagonal(double width = 0, double length = 0)
+            double TaskThree(double a, double b)
             {
-                int number = 2;
+                double sumOfSquaresAandB = Math.Pow(a, 2) + Math.Pow(b, 2);
+                double diagonal = Math.Sqrt(sumOfSquaresAandB);
 
-                Console.WriteLine("Enter width: ");
-                width = double.Parse(Console.ReadLine());
-                width = Math.Pow(width, number);
-
-                Console.WriteLine("Enter length: ");
-                length = double.Parse(Console.ReadLine());
-                length = Math.Pow(length, number);
-
-                return Math.Sqrt(width + length);
-
-
+                return diagonal;
             }
-            Console.WriteLine(diagonal());
         }
     }
 }
